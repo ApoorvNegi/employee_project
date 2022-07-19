@@ -1,0 +1,7 @@
+<div *ngIf="employees" [ngClass]="{project : employees.project}" class="emplyees">
+    <h3>{{employees.name}}
+        <fa-icon [icon]="faTimes" [ngStyle]="{color : 'red'}"></fa-icon>
+    </h3>
+    <p>{{employees.profession}}</p>
+    <p>{{employees.project}}</p>
+</div>
